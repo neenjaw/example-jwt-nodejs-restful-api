@@ -1,2 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://yourMongoDBURIGoesHere');
+
+// console.log(process.env);
+
+mongoose.connect(process.env.MONGOOSE_URI);
